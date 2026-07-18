@@ -91,6 +91,8 @@ export interface ArticleImage {
   caption: string;
   /** Render this image immediately after body[afterParagraph]. */
   afterParagraph: number;
+  /** True width/height aspect ratio of the source photo (width / height), so it renders uncropped. */
+  aspect: number;
 }
 
 export interface Article {
@@ -118,6 +120,7 @@ export const ARTICLES: Article[] = [
         caption:
           "The finished room pairs the 15-foot Fine & Dandy mural — reminiscent of ships anchored in Charleston Harbor at dusk — with Farrow & Ball paneling, a crystal chandelier and antique leather seating.",
         afterParagraph: 0,
+        aspect: 0.75,
       },
       {
         src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/6e43af48-2ca8-4bce-846a-e8e02669ff75.jpg",
@@ -125,6 +128,7 @@ export const ARTICLES: Article[] = [
         caption:
           "Constantine Kazameas smooths a final seam where the mural meets an exposed brick wall, working carefully to keep the ship rigging in the scene continuous.",
         afterParagraph: 3,
+        aspect: 0.75,
       },
       {
         src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/28708853-d7a6-403a-93f6-132485e4879d.jpg",
@@ -132,6 +136,7 @@ export const ARTICLES: Article[] = [
         caption:
           "George Kazameas smooths a mural panel into place along the ceiling line, checking the seam against the room's crown molding.",
         afterParagraph: 4,
+        aspect: 0.75,
       },
       {
         src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/476a6d29-62cf-42e3-bf93-2b78f2aab9c4.jpg",
@@ -139,6 +144,7 @@ export const ARTICLES: Article[] = [
         caption:
           "Constantine Kazameas, on the scaffold, and George Kazameas, holding the ladder below, position the room's mural to maximize focal integration.",
         afterParagraph: 8,
+        aspect: 0.75,
       },
       {
         src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/edb75127-fbf6-46fd-a436-acb92f5340de.jpg",
@@ -146,6 +152,7 @@ export const ARTICLES: Article[] = [
         caption:
           "Tools and materials staged mid-installation, with the mural already hung and the chandelier not yet fitted with its shade and finials.",
         afterParagraph: 9,
+        aspect: 0.75,
       },
     ],
     body: [
@@ -175,6 +182,7 @@ export const ARTICLES: Article[] = [
         alt: "Interior booths at the Chit Chat Diner in West Orange, New Jersey",
         caption: "Inside the Chit Chat Diner's dining room in West Orange, N.J.",
         afterParagraph: 0,
+        aspect: 1.499,
       },
       {
         src: "https://www.chitchatdiner.com/images/galleries/west-orange/big8.jpg",
@@ -182,18 +190,21 @@ export const ARTICLES: Article[] = [
         caption:
           "Ornate detailing throughout the Chit Chat Diner reflects its reputation as one of New Jersey's most theatrical dining rooms.",
         afterParagraph: 3,
+        aspect: 1.499,
       },
       {
         src: "https://www.chitchatdiner.com/images/galleries/west-orange/big12.jpg",
         alt: "Black-and-gold chandeliers at the Chit Chat Diner",
         caption: "Black-and-gold chandeliers are part of the diner's signature look.",
         afterParagraph: 6,
+        aspect: 1.499,
       },
       {
         src: "https://www.chitchatdiner.com/images/galleries/west-orange/big6.jpg",
         alt: "Dining room at the Chit Chat Diner",
         caption: "The dining room at Chit Chat Diner, West Orange.",
         afterParagraph: 7,
+        aspect: 1.499,
       },
     ],
     body: [

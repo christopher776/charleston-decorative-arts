@@ -54,12 +54,15 @@ export default async function ArticlePage({ params }: { params: Params }) {
               <p className="mb-5 text-base leading-relaxed text-[#3d2b1f]">{p}</p>
               {imagesHere.map((img, j) => (
                 <figure key={j} className="my-8">
-                  <div className="relative h-72 w-full overflow-hidden sm:h-96 md:h-[28rem]">
+                  <div
+                    className="relative w-full max-h-[42rem] mx-auto overflow-hidden bg-[#f3ead9]"
+                    style={{ aspectRatio: img.aspect }}
+                  >
                     <Image
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                       unoptimized
                     />
                   </div>
