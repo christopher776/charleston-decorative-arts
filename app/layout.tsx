@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     "historic wallpaper preservation",
     "Charleston interior design",
     "Kiawah Island luxury interiors",
+    "Fine and Dandy mural Charleston",
+    "King Street historic wallcoverings",
+    "Charleston Regency style",
+    "custom mural installation Charleston",
+    "George Kazameas wallcovering installer",
+    "MacKenzie-Childs wallcovering installation",
   ],
   openGraph: {
     title: `${SITE.name} | The Art of Extraordinary Interiors`,

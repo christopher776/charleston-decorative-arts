@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ARTICLES, SITE } from "@/lib/data";
@@ -40,13 +41,36 @@ export default async function ArticlePage({ params }: { params: Params }) {
           { name: article.title, url: `${SITE.url}/journal/${article.slug}` },
         ]}
       />
-      <PageHero eyebrow={article.category} title={article.title} subtitle={article.excerpt} />
+      <PageHero
+        eyebrow={article.dateline ? `${article.category} · ${article.dateline}` : article.category}
+        title={article.title}
+        subtitle={article.excerpt}
+      />
       <article className="mx-auto max-w-3xl px-6 py-16">
-        {article.body.map((p, i) => (
-          <p key={i} className="mb-5 text-base leading-relaxed text-[#3d2b1f]">
-            {p}
-          </p>
-        ))}
+        {article.body.map((p, i) => {
+          const imagesHere = article.images?.filter((img) => img.afterParagraph === i) ?? [];
+          return (
+            <div key={i}>
+              <p className="mb-5 text-base leading-relaxed text-[#3d2b1f]">{p}</p>
+              {imagesHere.map((img, j) => (
+                <figure key={j} className="my-8">
+                  <div className="relative h-72 w-full overflow-hidden sm:h-96 md:h-[28rem]">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-cover"
+                      unoptimized
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-center text-xs italic leading-relaxed text-[#5a4632]">
+                    {img.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          );
+        })}
         <div className="mt-12 border-t border-[#e4d9c2] pt-8 text-center">
           <Link
             href="/contact"

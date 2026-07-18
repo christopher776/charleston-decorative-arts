@@ -9,7 +9,7 @@ export const SITE = {
   tagline: "Preserving Charleston's Historic Beauty. Elevating Luxury Interiors.",
   description:
     "The Southeast's premier decorative arts studio specializing in luxury wallcoverings, historic restoration, bespoke murals, and the education of master craftsmen.",
-  phone: "(843) 555-0142",
+  phone: "843-600-0303",
   email: "studio@charlestondecorativearts.com",
 };
 
@@ -85,15 +85,131 @@ export const LOCATIONS: LocationArea[] = [
   { slug: "palm-beach", name: "Palm Beach", region: "Florida", blurb: "one of America's foremost luxury residential markets" },
 ];
 
+export interface ArticleImage {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Render this image immediately after body[afterParagraph]. */
+  afterParagraph: number;
+}
+
 export interface Article {
   slug: string;
   title: string;
   category: string;
   excerpt: string;
   body: string[];
+  images?: ArticleImage[];
+  dateline?: string;
 }
 
 export const ARTICLES: Article[] = [
+  {
+    slug: "fine-and-dandy-mural-king-street-charleston",
+    title: "Fine & Dandy Mural Brings Historic King Street Property to Life in Charleston's Regency Revival",
+    category: "Featured Projects",
+    dateline: "CHARLESTON, S.C.",
+    excerpt:
+      "A 15-foot custom Fine & Dandy mural, hand-installed by father-son craftsmen George and Constantine Kazameas, anchors a King Street restoration in a residence once owned by Darius Rucker.",
+    images: [
+      {
+        src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/1ccae5e9-4fd5-4e8c-96dd-90c1907528c8.jpg",
+        alt: "Finished room with a 15-foot Fine & Dandy mural, Farrow & Ball paneling, and a crystal chandelier on King Street in Charleston",
+        caption:
+          "The finished room pairs the 15-foot Fine & Dandy mural — reminiscent of ships anchored in Charleston Harbor at dusk — with Farrow & Ball paneling, a crystal chandelier and antique leather seating.",
+        afterParagraph: 0,
+      },
+      {
+        src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/6e43af48-2ca8-4bce-846a-e8e02669ff75.jpg",
+        alt: "Constantine Kazameas finishing a mural seam near an exposed brick wall",
+        caption:
+          "Constantine Kazameas smooths a final seam where the mural meets an exposed brick wall, working carefully to keep the ship rigging in the scene continuous.",
+        afterParagraph: 3,
+      },
+      {
+        src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/28708853-d7a6-403a-93f6-132485e4879d.jpg",
+        alt: "George Kazameas smoothing a mural panel near the ceiling line",
+        caption:
+          "George Kazameas smooths a mural panel into place along the ceiling line, checking the seam against the room's crown molding.",
+        afterParagraph: 4,
+      },
+      {
+        src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/476a6d29-62cf-42e3-bf93-2b78f2aab9c4.jpg",
+        alt: "Constantine Kazameas on a scaffold and George Kazameas below positioning the mural",
+        caption:
+          "Constantine Kazameas, on the scaffold, and George Kazameas, holding the ladder below, position the room's mural to maximize focal integration.",
+        afterParagraph: 8,
+      },
+      {
+        src: "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/edb75127-fbf6-46fd-a436-acb92f5340de.jpg",
+        alt: "Tools and materials staged mid-installation beneath a crystal chandelier",
+        caption:
+          "Tools and materials staged mid-installation, with the mural already hung and the chandelier not yet fitted with its shade and finials.",
+        afterParagraph: 9,
+      },
+    ],
+    body: [
+      "Along one of the most storied blocks of King Street, in a residence once owned by Grammy-winning musician Darius Rucker, a newly installed custom mural is drawing attention not just for its scale, but for what it represents: a return to the hand-craft traditions that built Charleston's historic district in the first place.",
+      "Master installers George Kazameas and his son, Constantine Kazameas, oversaw the large-scale, custom-printed canvas installation — a moody maritime scene reminiscent of ships riding at anchor in Charleston Harbor, rendered across a 15-foot custom mural from Fine & Dandy, the decorative arts house known for hand-painted, scenic wallcoverings, created specifically for the space.",
+      "The finished room pairs the mural with deep navy wainscoting painted in a Farrow & Ball hue, sourced locally through Michael Mitchell, the King Street interior design showroom, alongside an ornate plaster ceiling medallion and a multi-tier crystal chandelier — a combination the Kazameases describe as classic Charleston Regency: dramatic scale, rich color and old-world detail balanced against clean architectural lines.",
+      "\"You don't get a room like this by rushing it,\" George Kazameas said. \"I've been hanging paper for over 40 years, and the jobs that last are the ones where you respect the material and respect the wall. This mural had to feel like it had always been there.\"",
+      "For Constantine Kazameas, who trained under his father, the King Street project was as much about craft continuity as it was about the finished wall. \"My father taught me that a mural isn't wallpaper — it's a single image that has to survive being cut into panels and put back together seamlessly,\" Constantine Kazameas said. \"On a piece this size, at 15 feet, there's no room for a seam to catch your eye. You either did it right, or everyone who walks into that room will see exactly where you didn't.\"",
+      "George Kazameas, who has spent more than four decades installing traditional wallcoverings in historic and luxury interiors, said the appeal of working in a Regency-influenced room like this one is the license it gives an installer to think in terms of full walls rather than isolated strips. \"Forty years ago, when I started in this trade, a mural job like this was rare — most of the work was pattern-matching repeats,\" he said. \"Now the demand is for a single, unrepeated scene that wraps a whole room. It's a return to how the great historic houses actually did it before repeat-pattern wallpaper became the standard.\"",
+      "The property sits at 377 King Street, in a stretch of Charleston's King Street corridor whose building stock dates largely to two major eras of development, the late 1800s and the 1940s, according to a historic building survey conducted for the South Carolina State Historic Preservation Office. King Street itself traces its name to King Charles II and has functioned as Charleston's principal commercial spine for more than two centuries, evolving through cycles of decline and reinvestment — most notably after the street was converted from one-way to two-way traffic in 1994, a change credited with accelerating the corridor's modern revitalization.",
+      "Charleston County property records show Rucker purchased the unit in November 2016 and sold it in March 2021, part of the address's broader chain of ownership on a block increasingly defined by exactly this kind of high-end residential restoration.",
+      "Designers describe the Charleston Regency aesthetic — deep jewel-toned walls, formal symmetry, gilded accents and dramatic lighting set against restrained architectural millwork — as a style that lives or dies on the quality of its wallcovering installation and the paint it's set against. The room's Farrow & Ball palette, selected through Michael Mitchell's King Street showroom, was chosen specifically to let the mural's tonal range — deep grays, dull gold lamplight, blackened harbor water — carry the room without competing with it. A mural rendered at this scale requires more than adhesive and a steady hand: substrate assessment, humidity control appropriate to a peninsula city prone to high ambient moisture, and a laser-measured layout to make sure the image's horizon line and focal points land exactly where the room's sightlines demand.",
+      "\"In a city like Charleston, you're fighting humidity every single day of the install,\" Constantine Kazameas said. \"The wall is never really finished moving. You have to build in for that, or the mural you're proud of on day one won't be the mural still on that wall in fifteen years.\"",
+      "For George Kazameas, the project is one more entry in a career built on the belief that a wallcovering installation is judged in decades, not days. \"Forty-some years in, the compliment I still want to hear isn't 'that looks nice,'\" he said. \"It's somebody walking in ten years from now and asking who installed that wall — because they assume it's always been part of the house.\"",
+    ],
+  },
+  {
+    slug: "chit-chat-diner-fine-dandy-wallcovering-installation",
+    title: "Behind the Booths: A Landmark Diner's New Feature Wall Reflects a Craftsman's Eye for Detail",
+    category: "Featured Projects",
+    dateline: "WEST ORANGE, N.J.",
+    excerpt:
+      "Master installer George Kazameas brought a museum-grade approach — and a MacKenzie-Childs wallcovering — to one of New Jersey's most theatrical dining rooms.",
+    images: [
+      {
+        src: "https://www.chitchatdiner.com/images/galleries/west-orange/big7.jpg",
+        alt: "Interior booths at the Chit Chat Diner in West Orange, New Jersey",
+        caption: "Inside the Chit Chat Diner's dining room in West Orange, N.J.",
+        afterParagraph: 0,
+      },
+      {
+        src: "https://www.chitchatdiner.com/images/galleries/west-orange/big8.jpg",
+        alt: "Ornate decor detail inside the Chit Chat Diner",
+        caption:
+          "Ornate detailing throughout the Chit Chat Diner reflects its reputation as one of New Jersey's most theatrical dining rooms.",
+        afterParagraph: 3,
+      },
+      {
+        src: "https://www.chitchatdiner.com/images/galleries/west-orange/big12.jpg",
+        alt: "Black-and-gold chandeliers at the Chit Chat Diner",
+        caption: "Black-and-gold chandeliers are part of the diner's signature look.",
+        afterParagraph: 6,
+      },
+      {
+        src: "https://www.chitchatdiner.com/images/galleries/west-orange/big6.jpg",
+        alt: "Dining room at the Chit Chat Diner",
+        caption: "The dining room at Chit Chat Diner, West Orange.",
+        afterParagraph: 7,
+      },
+    ],
+    body: [
+      "At the Chit Chat Diner, a 24-hour landmark known for its whimsical, castle-like architecture and sweeping views of the Manhattan skyline, the latest addition isn't on the menu — it's on the wall.",
+      "Master installer George Kazameas spent the better part of two weeks inside the diner's dining room, hand-applying a large-scale scenic wallcovering mural across one of its signature feature walls. The project, completed for the diner's ownership, adds a new layer of old-world craftsmanship to a restaurant already known for its theatrical, larger-than-life interior.",
+      "\"This is a room that doesn't do anything halfway,\" Kazameas said. \"The architecture already tells you a story before you sit down. The mural just had to earn its place in that story.\"",
+      "Central to the room's identity is MacKenzie-Childs, the Aurora, New York-based decorative arts house whose hand-painted, theatrically maximalist aesthetic has become one of the most recognizable design languages in American interiors. Founded in 1983 by artists Victoria and Richard MacKenzie-Childs, the brand grew out of the couple's backgrounds in theater and ceramics — a lineage that shows in wallcoverings like its signature Courtly Check, a bold, off-kilter checkerboard motif that reads as playful up close and architectural from across a room.",
+      "\"MacKenzie-Childs doesn't do anything quietly, and neither does this diner,\" Kazameas said. \"That's exactly why it works here. You're not trying to calm the room down — you're trying to give it a pattern that can hold its own against chandeliers, checkerboard floors and a dining room that already looks like a stage set.\"",
+      "Unlike a subdued neutral pattern meant to recede into the background, Courtly Check and its companion motifs are designed to be a focal point — hand-finished, richly colored, and unapologetically decorative. That quality, designers say, is what separates a MacKenzie-Childs installation from a conventional commercial wallcovering: it doesn't soften a maximalist room, it completes it.",
+      "\"A lot of clients come to us wanting a wall that calms a space down,\" Kazameas said. \"This wasn't that kind of job. This was a wall that had to raise its hand and say, 'I belong in this room, too.'\"",
+      "The diner, which draws steady crowds for its all-day menu and its reputation as an only-in-New-Jersey landmark, has long been recognized for décor as memorable as its food. Its ownership has cultivated that identity since the current building opened, embracing an eclectic, maximalist style that regulars have compared to dinner theater as much as a diner.",
+      "Kazameas, whose installation work spans historic homes, luxury residences and hospitality spaces across the country, approached the commission the same way he would a museum-grade restoration: with a full site assessment, moisture and substrate analysis, and a laser-measured layout before a single panel went up. \"A diner wall takes a different kind of abuse than a dining room in a private home,\" he said. \"Steam, grease, constant traffic — you have to build the installation to survive all of it, not just look good on installation day.\"",
+      "The finished installation now anchors the dining room alongside the diner's chandeliers, patterned ceiling work and colorful booths. Kazameas said the goal was never to compete with the space's existing character, but to give it one more reason to stop guests mid-conversation. \"You want people to notice it, then forget they noticed it — because they're back in their conversation, in their coffee, in their booth,\" he said. \"That's the test of whether an installation belongs in a room like this.\"",
+      "The project is among a growing number of commercial and hospitality commissions Kazameas has taken on in recent months, reflecting a broader trend of restaurants and diners investing in statement interiors as a point of differentiation. \"Nobody's driving across three towns for a diner without a story,\" Kazameas said. \"The wall is part of how you tell it.\"",
+    ],
+  },
   {
     slug: "how-much-does-luxury-wallpaper-installation-cost",
     title: "How Much Does Luxury Wallpaper Installation Cost?",

@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "galaxy-prod.tlcdn.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.chitchatdiner.com",
+      },
     ],
   },
 };
