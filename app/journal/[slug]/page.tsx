@@ -22,6 +22,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
+function isExternal(href: string) {
+  return href.startsWith("http");
+}
+
 export default async function ArticlePage({ params }: { params: Params }) {
   const { slug } = await params;
   const article = ARTICLES.find((a) => a.slug === slug);
@@ -74,6 +78,27 @@ export default async function ArticlePage({ params }: { params: Params }) {
             </div>
           );
         })}
+
+        {article.credits && article.credits.length > 0 && (
+          <p className="mt-10 border-t border-[#e4d9c2] pt-6 text-sm italic leading-relaxed text-[#5a4632]">
+            {article.credits.map((seg, i) =>
+              seg.href ? (
+                <Link
+                  key={i}
+                  href={seg.href}
+                  target={isExternal(seg.href) ? "_blank" : undefined}
+                  rel={isExternal(seg.href) ? "noopener noreferrer" : undefined}
+                  className="not-italic font-semibold text-[#8a6d1d] underline underline-offset-2 hover:text-[#6f5717]"
+                >
+                  {seg.text}
+                </Link>
+              ) : (
+                <span key={i}>{seg.text}</span>
+              )
+            )}
+          </p>
+        )}
+
         <div className="mt-12 border-t border-[#e4d9c2] pt-8 text-center">
           <Link
             href="/contact"

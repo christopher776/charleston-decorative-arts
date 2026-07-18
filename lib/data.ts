@@ -95,6 +95,11 @@ export interface ArticleImage {
   aspect: number;
 }
 
+export interface CreditSegment {
+  text: string;
+  href?: string;
+}
+
 export interface Article {
   slug: string;
   title: string;
@@ -103,6 +108,7 @@ export interface Article {
   body: string[];
   images?: ArticleImage[];
   dateline?: string;
+  credits?: CreditSegment[];
 }
 
 export const ARTICLES: Article[] = [
@@ -167,6 +173,15 @@ export const ARTICLES: Article[] = [
       "Designers describe the Charleston Regency aesthetic — deep jewel-toned walls, formal symmetry, gilded accents and dramatic lighting set against restrained architectural millwork — as a style that lives or dies on the quality of its wallcovering installation and the paint it's set against. The room's Farrow & Ball palette, selected through Michael Mitchell's King Street showroom, was chosen specifically to let the mural's tonal range — deep grays, dull gold lamplight, blackened harbor water — carry the room without competing with it. A mural rendered at this scale requires more than adhesive and a steady hand: substrate assessment, humidity control appropriate to a peninsula city prone to high ambient moisture, and a laser-measured layout to make sure the image's horizon line and focal points land exactly where the room's sightlines demand.",
       "\"In a city like Charleston, you're fighting humidity every single day of the install,\" Constantine Kazameas said. \"The wall is never really finished moving. You have to build in for that, or the mural you're proud of on day one won't be the mural still on that wall in fifteen years.\"",
       "For George Kazameas, the project is one more entry in a career built on the belief that a wallcovering installation is judged in decades, not days. \"Forty-some years in, the compliment I still want to hear isn't 'that looks nice,'\" he said. \"It's somebody walking in ten years from now and asking who installed that wall — because they assume it's always been part of the house.\"",
+    ],
+    credits: [
+      { text: "Charleston Decorative Arts specializes in luxury wallcoverings, historic restoration, custom murals and decorative finishes across Charleston's historic district and the broader Southeast. Mural produced by " },
+      { text: "Fine & Dandy", href: "https://fineanddandycompany.com" },
+      { text: ". Paint by " },
+      { text: "Farrow & Ball", href: "https://www.farrow-ball.com" },
+      { text: ", sourced through " },
+      { text: "Michael Mitchell", href: "https://www.michaelmitchellinc.com" },
+      { text: ", Charleston." },
     ],
   },
   {
