@@ -18,7 +18,7 @@ export default function DesignerPortalPage() {
       />
       <section className="px-6 py-20">
         <div className="mx-auto max-w-2xl">
-          <ContactForm />
+          <ContactForm subject="New Trade Registration — Designer Portal" />
         </div>
       </section>
     </>

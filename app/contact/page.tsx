@@ -37,10 +37,18 @@ export default function ContactPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-[#5a4632]">{SITE.phone}</p>
-            <p className="text-sm text-[#5a4632]">{SITE.email}</p>
+            <p className="text-sm text-[#5a4632]">
+              <a href={`tel:${SITE.phone.replace(/[^0-9+]/g, "")}`} className="hover:text-[#8a6d1d] hover:underline">
+                {SITE.phone}
+              </a>
+            </p>
+            <p className="text-sm text-[#5a4632]">
+              <a href={`mailto:${SITE.email}`} className="hover:text-[#8a6d1d] hover:underline">
+                {SITE.email}
+              </a>
+            </p>
           </div>
-          <ContactForm />
+          <ContactForm subject="New Consultation Request — Contact Page" />
         </div>
       </section>
     </>

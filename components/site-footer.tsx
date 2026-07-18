@@ -46,8 +46,16 @@ export function SiteFooter() {
               Contact
             </h3>
             <ul className="space-y-2 text-sm text-[#e8dcc4]">
-              <li>{SITE.phone}</li>
-              <li>{SITE.email}</li>
+              <li>
+                <a href={`tel:${SITE.phone.replace(/[^0-9+]/g, "")}`} className="hover:text-[#c9a959] hover:underline">
+                  {SITE.phone}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${SITE.email}`} className="hover:text-[#c9a959] hover:underline">
+                  {SITE.email}
+                </a>
+              </li>
               <li><Link href="/contact">Schedule Consultation</Link></li>
               <li><Link href="/designer-portal">Trade Registration</Link></li>
             </ul>
