@@ -4,6 +4,12 @@ import { IMG } from "@/lib/images";
 
 const PROJECTS = [
   {
+    name: "College of Charleston — Tri Delta House",
+    image: "/images/journal/tri-delta-charleston/finished-grasscloth-floral-ceiling.jpg",
+    href: "/journal/tri-delta-charleston-grasscloth-ceiling-wallpaper-installation",
+    badge: "New Story",
+  },
+  {
     name: "King Street — Fine & Dandy Mural",
     image:
       "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/1ccae5e9-4fd5-4e8c-96dd-90c1907528c8.jpg",
@@ -16,7 +22,6 @@ const PROJECTS = [
     href: "/journal/chit-chat-diner-fine-dandy-wallcovering-installation",
     badge: "Featured Project",
   },
-  { name: "The Battery", image: IMG.battery },
   { name: "South of Broad", image: IMG.southOfBroad },
 ];
 

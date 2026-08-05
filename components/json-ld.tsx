@@ -38,10 +38,14 @@ export function ArticleJsonLd({
   title,
   description,
   slug,
+  image,
+  datePublished,
 }: {
   title: string;
   description: string;
   slug: string;
+  image?: string;
+  datePublished?: string;
 }) {
   const data = {
     "@context": "https://schema.org",
@@ -49,6 +53,14 @@ export function ArticleJsonLd({
     headline: title,
     description,
     url: `${SITE.url}/journal/${slug}`,
+    mainEntityOfPage: `${SITE.url}/journal/${slug}`,
+    ...(image ? { image: image.startsWith("http") ? image : `${SITE.url}${image}` } : {}),
+    ...(datePublished ? { datePublished, dateModified: datePublished } : {}),
+    author: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+    },
     publisher: {
       "@type": "Organization",
       name: SITE.name,
