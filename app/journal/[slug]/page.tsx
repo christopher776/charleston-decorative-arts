@@ -19,6 +19,17 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: { canonical: `/journal/${article.slug}` },
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.excerpt,
+      url: `/journal/${article.slug}`,
+      publishedTime: article.published,
+      images: article.images?.[0]
+        ? [{ url: article.images[0].src, alt: article.images[0].alt }]
+        : undefined,
+    },
   };
 }
 
@@ -37,7 +48,13 @@ export default async function ArticlePage({ params }: { params: Params }) {
 
   return (
     <>
-      <ArticleJsonLd title={article.title} description={article.excerpt} slug={article.slug} />
+      <ArticleJsonLd
+        title={article.title}
+        description={article.excerpt}
+        slug={article.slug}
+        image={article.images?.[0]?.src}
+        datePublished={article.published}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: SITE.url },

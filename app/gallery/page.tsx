@@ -12,6 +12,12 @@ export const metadata: Metadata = {
 
 const GALLERY = [
   {
+    title: "Tri Delta House — Grasscloth & Ceiling Wallpaper, Charleston",
+    image: "/images/journal/tri-delta-charleston/finished-grasscloth-floral-ceiling.jpg",
+    cat: "Featured Project · Historic Interiors",
+    href: "/journal/tri-delta-charleston-grasscloth-ceiling-wallpaper-installation",
+  },
+  {
     title: "377 King Street — Fine & Dandy Mural, Charleston",
     image:
       "https://galaxy-prod.tlcdn.com/gen/user_33t8y88T1htQ2Ohh0A0DVFfvIXu/1ccae5e9-4fd5-4e8c-96dd-90c1907528c8.jpg",

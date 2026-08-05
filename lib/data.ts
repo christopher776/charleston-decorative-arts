@@ -109,9 +109,123 @@ export interface Article {
   images?: ArticleImage[];
   dateline?: string;
   credits?: CreditSegment[];
+  published?: string;
 }
 
 export const ARTICLES: Article[] = [
+  {
+    slug: "tri-delta-charleston-grasscloth-ceiling-wallpaper-installation",
+    title: "A Historic Touch Overhead: Grasscloth and Ceiling Wallpaper Renew Charleston's Tri Delta House",
+    category: "Featured Projects",
+    dateline: "CHARLESTON, S.C.",
+    published: "2026-08-05",
+    excerpt:
+      "Inside the College of Charleston's Tri Delta chapter house, custom grasscloth and floral ceiling wallpaper bring warmth, pattern and period-minded character to a historic gathering space.",
+    images: [
+      {
+        src: "/images/journal/tri-delta-charleston/finished-grasscloth-floral-ceiling.jpg",
+        alt: "Finished Tri Delta chapter house room with natural grasscloth walls and floral ceiling wallpaper in Charleston",
+        caption:
+          "The completed room layers warm natural grasscloth with a botanical ceiling paper, allowing the white millwork, bay windows and fireplace to remain visually crisp.",
+        afterParagraph: 0,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/tri-delta-charleston/tri-delta-chapter-house-exterior.jpg",
+        alt: "Historic light-blue Tri Delta chapter house near the College of Charleston with Delta Delta Delta letters beside the entrance",
+        caption:
+          "The Tri Delta chapter house near the College of Charleston is distinguished by its historic facade, ornamental trim and three delta letters at the entrance.",
+        afterParagraph: 2,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/tri-delta-charleston/grasscloth-installation-in-progress.jpg",
+        alt: "Natural grasscloth wallcovering installation in progress around a fireplace and historic woodwork",
+        caption:
+          "During installation, the grasscloth was fitted around the fireplace, doors and projecting picture rail while preserving the room's layered trim.",
+        afterParagraph: 4,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/tri-delta-charleston/grasscloth-millwork-detail.jpg",
+        alt: "Close detail of hand-cut grasscloth fitted to historic door casing and crown molding",
+        caption:
+          "A close view shows the precision required where natural grasscloth meets old door casing, crown molding and an architectural projection.",
+        afterParagraph: 5,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/tri-delta-charleston/wallpapered-ceiling-bay-window.jpg",
+        alt: "Floral wallpapered ceiling above grasscloth walls and a historic Charleston bay window",
+        caption:
+          "The patterned ceiling acts as a fifth wall, drawing the eye across the bay window and back toward the room's substantial crown molding.",
+        afterParagraph: 7,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/tri-delta-charleston/grasscloth-fireplace-detail.jpg",
+        alt: "Grasscloth walls surrounding a white historic fireplace mantel and tall glazed door",
+        caption:
+          "Natural texture gives the fireplace wall depth while keeping the historic mantel and glazed door as the principal architectural features.",
+        afterParagraph: 8,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/tri-delta-charleston/ceiling-wallpaper-chandelier.jpg",
+        alt: "Botanical ceiling wallpaper and brass chandelier over natural grasscloth walls",
+        caption:
+          "The botanical repeat meets the ceiling medallion and chandelier with a balanced layout designed to read as one continuous field.",
+        afterParagraph: 10,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/tri-delta-charleston/grasscloth-stained-glass-room.jpg",
+        alt: "Grasscloth installation beside colorful historic stained-glass bay windows in the Tri Delta house",
+        caption:
+          "In an adjoining bay, quiet grasscloth provides a warm backdrop for the house's vivid stained-glass windows.",
+        afterParagraph: 11,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/tri-delta-charleston/historic-stained-glass-window.jpg",
+        alt: "Red blue amber and textured stained-glass sash window above a historic stair landing",
+        caption:
+          "Existing stained glass and painted millwork reinforce the chapter house's richly layered architectural character.",
+        afterParagraph: 12,
+        aspect: 0.75,
+      },
+    ],
+    body: [
+      "At the Tri Delta chapter house near the College of Charleston, a familiar gathering room now carries its history all the way to the ceiling. Charleston Decorative Arts installed custom natural grasscloth across the walls and a small-scale botanical wallpaper overhead, creating a layered interior that feels welcoming to today's chapter while remaining sympathetic to the architecture around it.",
+      "The transformation is quiet at eye level and exuberant above. Warm, irregular grass fibers soften the tall walls and bring depth to the room without competing with its white-painted doors, windows, fireplace and substantial crown molding. Overhead, a field of fine vines and flowers turns the ceiling into the room's most memorable surface. Together, the two wallcoverings enhance the chapter house by giving its shared space a stronger sense of identity, warmth and permanence.",
+      "That balance matters in Charleston, where historic interiors rarely need a wholesale reinvention. They need new work that notices what is already there: the proportion of a bay window, the profile of a mantel, the rhythm of old trim and the way daylight moves through tall sashes. Here, grasscloth supplies texture while the ceiling pattern supplies movement, leaving the architecture legible rather than covering it up.",
+      "The College of Charleston was founded in 1770 and is the oldest educational institution south of Virginia. Tri Delta's Alpha Nu chapter joined that long campus story in 1921, only a few years after the College admitted women in 1918. More than a century later, the chapter remains part of a downtown campus where student life unfolds among historic streets, houses and institutional buildings.",
+      "Tri Delta itself began much earlier, at Boston University. Seniors Sarah Ida Shaw and Eleanor Dorcas Pond created the organization's rituals, constitution and emblems before declaring Delta Delta Delta founded on Thanksgiving Eve in 1888. Their stated ambition was to build a women's organization attentive to character rather than appearance alone—an origin that gives special resonance to the idea of a chapter house as more than decoration. It is a setting for belonging, study, leadership and shared memory.",
+      "Installing grasscloth in an older room requires patience because the material is intentionally organic. Variations in fiber, color and panel tone are part of its beauty, but every drop still has to be planned around doors, corners, mantels and complex millwork. At the chapter house, careful cutting preserved the crisp line of the painted trim while allowing the horizontal fibers to read continuously around the room.",
+      "The ceiling demanded a different kind of precision. Unlike a wall, it offers no forgiving place to begin or end: the pattern must remain square across a broad plane, seams must lie flat against gravity, and cuts around a medallion, fixture and crown molding are immediately visible from below. A successful ceiling wallpaper installation is therefore part layout, part surface preparation and part practiced choreography.",
+      "Why is ceiling wallpaper a historic touch in an older home? In the nineteenth century, decorated ceilings were part of complete interior schemes rather than isolated novelty. The Victoria and Albert Museum notes that Victorian rooms could combine dado, filling and frieze papers with ceiling papers to create richly patterned ensembles. Historic New England likewise documents coordinated borders and ceiling papers used throughout domestic interiors. Pattern overhead can therefore reintroduce a historically grounded sense of layering while still feeling fresh to a modern eye.",
+      "That does not mean every historic house should imitate a single period. The better preservation-minded approach is to use scale, material and placement to converse with the existing room. A finely drawn botanical pattern can visually lower a tall ceiling just enough to make a gathering room feel intimate, while a restrained wall texture allows fireplaces and woodwork to remain prominent. The result retains character without pretending the installation is original fabric.",
+      "Wallpaper has also appeared in the continuing care of other Tri Delta homes. Cornell's Alpha Beta alumnae documented new wallpaper and paint in chapter-house updates, while Tri Delta Housing has described historically sensitive renovations at houses including Omicron at Syracuse, an 1890 residence with four original fireplaces, and Theta Xi at the University of Southern California, a house built in 1897 whose stewards emphasize protecting original architectural details. The styles differ, but the principle is consistent: a chapter house can evolve while its most meaningful character is respected.",
+      "The Charleston installation belongs to that broader tradition. Its botanical ceiling is decorative, but it also restores the idea that the upper plane of a room deserves consideration. Its grasscloth is luxurious, but it works because natural fiber feels at home beside aged wood floors, painted millwork and the gentle irregularities of an older building.",
+      "For the members who use the house now, the effect is immediate: the room feels finished from floor to ceiling. For alumnae returning years from now, the hope is subtler—that the space will still feel unmistakably like their chapter house, only more complete.",
+      "Charleston's best historic interiors are not static. They gather evidence of care across generations. At the Tri Delta house, custom grasscloth and ceiling wallpaper add the newest layer: one made with respect for the past and designed for the life of the chapter today.",
+    ],
+    credits: [
+      { text: "Historical sources: " },
+      { text: "Tri Delta History and Archives", href: "https://www.tridelta.org/our-story/history-and-archives/" },
+      { text: "; " },
+      { text: "College of Charleston timeline", href: "https://charleston.edu/about/history-traditions/timeline.php" },
+      { text: "; " },
+      { text: "Victoria and Albert Museum wallpaper history", href: "https://www.vam.ac.uk/articles/a-brief-history-of-wallpaper" },
+      { text: "; " },
+      { text: "Historic New England wallpaper collection", href: "https://www.historicnewengland.org/explore/collections-access/wallpaper/" },
+      { text: "; " },
+      { text: "Tri Delta Housing", href: "https://www.tridelta.org/the-trident/a-year-of-growth-for-tri-delta-housing/" },
+      { text: "; and " },
+      { text: "USC Tri Delta house history", href: "https://usctridelta.org/our-house" },
+      { text: ". Installation photography supplied by Charleston Decorative Arts." },
+    ],
+  },
   {
     slug: "fine-and-dandy-mural-king-street-charleston",
     title: "Fine & Dandy Mural Brings Historic King Street Property to Life in Charleston's Regency Revival",
