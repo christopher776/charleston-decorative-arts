@@ -16,9 +16,12 @@ const OPTIONS = [
   "Virtual Design Review",
   "Builder Services",
   "Trade Registration",
+  "Schumacher Memo, Availability & Quote",
 ];
 
-export default function ContactPage() {
+export default async function ContactPage({ searchParams }: { searchParams: Promise<{ schumacher?: string }> }) {
+  const { schumacher } = await searchParams;
+  const product = schumacher ? decodeURIComponent(schumacher) : undefined;
   return (
     <>
       <PageHero
@@ -48,7 +51,10 @@ export default function ContactPage() {
               </a>
             </p>
           </div>
-          <ContactForm subject="New Consultation Request — Contact Page" />
+          <ContactForm
+            subject={product ? `Schumacher Inquiry — ${product}` : "New Consultation Request — Contact Page"}
+            initialMessage={product ? `I am interested in ${product} by Schumacher. Please help with: memo request / current availability / best available pricing / quantity or installation guidance.\n\nProject location:\nEstimated quantity or room dimensions:\nPreferred colorway:` : undefined}
+          />
         </div>
       </section>
     </>
