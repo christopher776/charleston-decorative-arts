@@ -11,9 +11,11 @@ import { SITE } from "@/lib/data";
 interface ContactFormProps {
   /** Shown as the email subject line so studio@ can tell which form a lead came from. */
   subject?: string;
+  /** Optional context carried into a targeted inquiry from a product page. */
+  initialMessage?: string;
 }
 
-export function ContactForm({ subject = "New Consultation Request — Website" }: ContactFormProps) {
+export function ContactForm({ subject = "New Consultation Request — Website", initialMessage }: ContactFormProps) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -69,7 +71,7 @@ export function ContactForm({ subject = "New Consultation Request — Website" }
       </div>
       <div>
         <Label htmlFor="message">Project Details</Label>
-        <Textarea id="message" name="message" required rows={5} className="mt-1 rounded-none" />
+        <Textarea id="message" name="message" required rows={7} defaultValue={initialMessage} className="mt-1 rounded-none" />
       </div>
 
       {status === "error" && (

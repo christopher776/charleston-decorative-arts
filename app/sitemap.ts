@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE, BRANDS, LOCATIONS, ARTICLES, NAV } from "@/lib/data";
+import { SCHUMACHER_PRODUCTS } from "@/lib/schumacher-products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "historic-restoration",
     "murals",
     "decorative-finishes",
+    "schumacher",
   ].map((route) => ({
     url: `${SITE.url}/${route}`,
     lastModified: new Date(),
@@ -47,5 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...brandRoutes, ...locationRoutes, ...articleRoutes];
+  const schumacherRoutes = SCHUMACHER_PRODUCTS.map((product) => ({
+    url: `${SITE.url}/schumacher/${product.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  return [...staticRoutes, ...brandRoutes, ...locationRoutes, ...articleRoutes, ...schumacherRoutes];
 }

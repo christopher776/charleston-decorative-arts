@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.chitchatdiner.com",
       },
+      {
+        protocol: "https",
+        hostname: "cdn-webassets.schumacher.com",
+      },
     ],
   },
 };
