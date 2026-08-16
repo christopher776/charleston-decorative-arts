@@ -16,29 +16,35 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-t from-[#2a1d13]/80 via-[#2a1d13]/40 to-[#2a1d13]/20" />
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center text-[#fbf6ec]">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-[#e8cf8f]">
-          Luxury Wallcoverings · Historic Interiors · Murals · Education
+          Schumacher Trade Partner · Wallpaper Sales · Expert Installation
         </p>
         <h1 className="font-serif text-4xl leading-tight md:text-6xl">
-          The Art of Extraordinary Interiors
+          Designer Wallpaper, Sourced and Expertly Installed
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-base text-[#f3ead9] md:text-lg">
-          Preserving Charleston&rsquo;s Historic Beauty. Elevating Luxury Interiors.
+          Shop curated Schumacher wallcoverings, receive specification support and protect your investment with professional installation throughout Charleston and the Lowcountry.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button
             asChild
             className="rounded-none bg-[#c9a959] px-8 py-6 text-xs uppercase tracking-widest text-[#2a1d13] hover:bg-[#e8cf8f]"
           >
-            <Link href="/contact">Schedule Consultation</Link>
+            <Link href="/schumacher">Shop Schumacher Wallpaper</Link>
           </Button>
           <Button
             asChild
             variant="outline"
             className="rounded-none border-[#f3ead9] bg-transparent px-8 py-6 text-xs uppercase tracking-widest text-[#f3ead9] hover:bg-[#f3ead9] hover:text-[#2a1d13]"
           >
-            <Link href="/gallery">View Portfolio</Link>
+            <Link href="/contact?project=wallpaper-installation">Request Installation Quote</Link>
           </Button>
         </div>
+        <Link
+          href="/gallery"
+          className="mt-7 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-[#f3ead9] underline decoration-[#c9a959] underline-offset-8 hover:text-[#e8cf8f]"
+        >
+          See Our Installation Portfolio
+        </Link>
       </div>
     </section>
   );

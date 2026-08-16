@@ -14,18 +14,12 @@ export const SITE = {
 };
 
 export const NAV = [
-  { label: "Home", href: "/" },
-  { label: "Luxury Wallcoverings", href: "/luxury-wallcoverings" },
-  { label: "Historic Restoration", href: "/historic-restoration" },
-  { label: "Murals", href: "/murals" },
-  { label: "Decorative Finishes", href: "/decorative-finishes" },
-  { label: "Designers & Architects", href: "/designers-architects" },
-  { label: "Historic Properties", href: "/historic-properties" },
-  { label: "Education", href: "/education" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Journal", href: "/journal" },
+  { label: "Shop Schumacher", href: "/schumacher" },
+  { label: "Wallpaper Installation", href: "/luxury-wallcoverings" },
+  { label: "Portfolio", href: "/gallery" },
+  { label: "Designers & Trade", href: "/designers-architects" },
+  { label: "Historic Work", href: "/historic-restoration" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export interface Brand {

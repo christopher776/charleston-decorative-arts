@@ -35,11 +35,14 @@ export function FeaturedProjects() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#8a6d1d]">
-            Featured Projects
+            Installation Portfolio
           </p>
           <h2 className="font-serif text-3xl text-[#3d2b1f] md:text-4xl">
-            King Street · The Battery · South of Broad · Kiawah Island · Daniel Island · Mount Pleasant
+            See the Planning and Precision Behind the Finished Room
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-[#5a4632]">
+            Explore documented wallpaper and mural installations in historic homes, designer interiors and commercial spaces.
+          </p>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {PROJECTS.map((p) => {
@@ -71,6 +74,14 @@ export function FeaturedProjects() {
               <div key={p.name}>{card}</div>
             );
           })}
+        </div>
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Link href="/gallery" className="border border-[#8a6d1d] px-7 py-4 text-xs font-semibold uppercase tracking-widest text-[#8a6d1d] hover:bg-[#8a6d1d] hover:text-[#fbf6ec]">
+            View All Project Stories
+          </Link>
+          <Link href="/contact?project=wallpaper-installation" className="bg-[#8a6d1d] px-7 py-4 text-xs font-semibold uppercase tracking-widest text-[#fbf6ec] hover:bg-[#6f5717]">
+            Request an Installation Quote
+          </Link>
         </div>
       </div>
     </section>

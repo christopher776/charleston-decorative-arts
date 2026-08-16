@@ -116,13 +116,18 @@ export default async function ArticlePage({ params }: { params: Params }) {
           </p>
         )}
 
-        <div className="mt-12 border-t border-[#e4d9c2] pt-8 text-center">
-          <Link
-            href="/contact"
-            className="text-xs font-semibold uppercase tracking-widest text-[#8a6d1d]"
-          >
-            Schedule a Consultation →
-          </Link>
+        <div className="mt-12 bg-[#3d2b1f] px-6 py-10 text-center text-[#fbf6ec]">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#d9bd73]">Bring This Level of Craftsmanship to Your Project</p>
+          <h2 className="mt-3 font-serif text-2xl">Planning a Wallpaper Installation?</h2>
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-[#eadfce]">Share your wallcovering, room dimensions and project location for an installation review and quote.</p>
+          <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+            <Link href="/contact?project=wallpaper-installation" className="bg-[#c9a959] px-6 py-3 text-xs font-semibold uppercase tracking-widest text-[#2a1d13] hover:bg-[#dbc47f]">
+              Request Installation Quote
+            </Link>
+            <Link href="/schumacher" className="border border-[#d9bd73] px-6 py-3 text-xs font-semibold uppercase tracking-widest text-[#fbf6ec] hover:bg-[#fbf6ec] hover:text-[#3d2b1f]">
+              Shop Schumacher Wallpaper
+            </Link>
+          </div>
         </div>
       </article>
       {related.length > 0 && (

@@ -5,9 +5,9 @@ import { PageHero } from "@/components/page-hero";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Gallery | Luxury Homes, Historic Restorations & Murals",
+  title: "Installation Portfolio | Wallpaper, Historic Interiors & Murals",
   description:
-    "A portfolio of luxury home, historic home, mural, commercial, and hospitality installations by Charleston Decorative Arts.",
+    "Explore documented wallpaper, historic interior, mural and commercial installations by Charleston Decorative Arts, then request a project quote.",
 };
 
 const GALLERY = [
@@ -36,8 +36,6 @@ const GALLERY = [
     cat: "Featured Project · Commercial",
     href: "/journal/chit-chat-diner-fine-dandy-wallcovering-installation",
   },
-  { title: "Battery Mansion Foyer Mural", image: IMG.battery, cat: "Historic Homes" },
-  { title: "South of Broad Courtyard Wallcovering", image: IMG.southOfBroad, cat: "Luxury Homes" },
   { title: "Kiawah Island Great Room", image: IMG.kiawah, cat: "Luxury Homes" },
   { title: "Historic Church Restoration", image: IMG.church, cat: "Commercial" },
   { title: "Hand-Painted Feature Wall", image: IMG.murals, cat: "Murals" },
@@ -50,9 +48,9 @@ export default function GalleryPage() {
   return (
     <>
       <PageHero
-        eyebrow="Gallery"
-        title="A Portfolio of Extraordinary Interiors"
-        subtitle="Luxury homes, historic homes, murals, commercial, and hospitality — a selection of our completed work."
+        eyebrow="Installation Portfolio"
+        title="Real Projects. Documented Craftsmanship."
+        subtitle="Explore completed wallpaper and mural installations, see how difficult spaces are planned, and find the right approach for your project."
       />
       <section className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,6 +68,9 @@ export default function GalleryPage() {
                 <div className="absolute bottom-4 left-4 right-4">
                   <p className="text-[10px] uppercase tracking-widest text-[#e8cf8f]">{g.cat}</p>
                   <p className="font-serif text-lg leading-snug text-[#fbf6ec]">{g.title}</p>
+                  {"href" in g && g.href ? (
+                    <p className="mt-2 text-[10px] font-semibold uppercase tracking-widest text-[#e8cf8f]">Read Project Story →</p>
+                  ) : null}
                 </div>
               </div>
             );
@@ -81,6 +82,16 @@ export default function GalleryPage() {
               <div key={g.title}>{tile}</div>
             );
           })}
+        </div>
+      </section>
+      <section className="bg-[#3d2b1f] px-6 py-16 text-center text-[#fbf6ec]">
+        <div className="mx-auto max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#d9bd73]">Planning a Wallpaper Project?</p>
+          <h2 className="mt-4 font-serif text-3xl md:text-4xl">Protect the Material. Preserve the Design Intent.</h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-[#eadfce]">Send us the room dimensions, wallcovering information and project location. We will review the installation requirements and prepare a quote.</p>
+          <Link href="/contact?project=wallpaper-installation" className="mt-8 inline-block bg-[#c9a959] px-8 py-4 text-xs font-semibold uppercase tracking-widest text-[#2a1d13] hover:bg-[#dbc47f]">
+            Request an Installation Quote
+          </Link>
         </div>
       </section>
     </>

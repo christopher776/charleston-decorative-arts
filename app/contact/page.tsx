@@ -10,24 +10,36 @@ export const metadata: Metadata = {
 };
 
 const OPTIONS = [
+  "Wallpaper Installation Quote",
+  "Schumacher Wallpaper, Memo & Pricing",
   "Luxury Consultation",
   "Designer Consultation",
   "Historic Restoration Assessment",
   "Virtual Design Review",
   "Builder Services",
   "Trade Registration",
-  "Schumacher Memo, Availability & Quote",
 ];
 
-export default async function ContactPage({ searchParams }: { searchParams: Promise<{ schumacher?: string }> }) {
-  const { schumacher } = await searchParams;
+export default async function ContactPage({ searchParams }: { searchParams: Promise<{ schumacher?: string; project?: string }> }) {
+  const { schumacher, project } = await searchParams;
   const product = schumacher ? decodeURIComponent(schumacher) : undefined;
+  const installationQuote = project === "wallpaper-installation";
+  const subject = product
+    ? `Schumacher Inquiry — ${product}`
+    : installationQuote
+      ? "Wallpaper Installation Quote Request"
+      : "New Consultation Request — Contact Page";
+  const initialMessage = product
+    ? `I am interested in ${product} by Schumacher. Please help with: memo request / current availability / best available pricing / quantity or installation guidance.\n\nProject location:\nEstimated quantity or room dimensions:\nPreferred colorway:`
+    : installationQuote
+      ? "I would like a wallpaper installation quote.\n\nProject location:\nRoom dimensions or estimated square footage:\nWallcovering brand and pattern:\nNumber of rolls already purchased (if applicable):\nDesired installation timing:"
+      : undefined;
   return (
     <>
       <PageHero
         eyebrow="Contact"
-        title="Begin Your Project"
-        subtitle="Whether you're a homeowner, designer, architect, or builder, our studio is ready to discuss your luxury or historic interior project."
+        title={installationQuote ? "Request a Wallpaper Installation Quote" : "Begin Your Project"}
+        subtitle={installationQuote ? "Share your wallcovering and project details so our team can evaluate the installation requirements and prepare an informed quote." : "Whether you're a homeowner, designer, architect, or builder, our studio is ready to discuss your luxury or historic interior project."}
       />
       <section className="px-6 py-20">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 md:grid-cols-2">
@@ -52,8 +64,8 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
             </p>
           </div>
           <ContactForm
-            subject={product ? `Schumacher Inquiry — ${product}` : "New Consultation Request — Contact Page"}
-            initialMessage={product ? `I am interested in ${product} by Schumacher. Please help with: memo request / current availability / best available pricing / quantity or installation guidance.\n\nProject location:\nEstimated quantity or room dimensions:\nPreferred colorway:` : undefined}
+            subject={subject}
+            initialMessage={initialMessage}
           />
         </div>
       </section>

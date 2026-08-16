@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { NAV, SITE } from "@/lib/data";
+import { NAV } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 
 export function SiteHeader() {
@@ -24,12 +24,16 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 xl:flex">
-          {NAV.slice(1, 8).map((item) => (
+        <nav className="hidden items-center gap-5 xl:flex">
+          {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-xs font-medium uppercase tracking-widest text-[#5a4632] transition-colors hover:text-[#8a6d1d]"
+              className={
+                item.href === "/schumacher"
+                  ? "border-b border-[#8a6d1d] pb-1 text-xs font-semibold uppercase tracking-widest text-[#8a6d1d] transition-colors hover:text-[#5f4812]"
+                  : "text-xs font-medium uppercase tracking-widest text-[#5a4632] transition-colors hover:text-[#8a6d1d]"
+              }
             >
               {item.label}
             </Link>
@@ -39,9 +43,9 @@ export function SiteHeader() {
         <div className="hidden lg:flex">
           <Button
             asChild
-            className="rounded-none border border-[#8a6d1d] bg-transparent px-5 text-xs uppercase tracking-widest text-[#8a6d1d] hover:bg-[#8a6d1d] hover:text-[#fbf6ec]"
+            className="rounded-none bg-[#8a6d1d] px-5 text-xs uppercase tracking-widest text-[#fbf6ec] hover:bg-[#6f5717]"
           >
-            <Link href="/contact">Schedule Consultation</Link>
+            <Link href="/contact?project=wallpaper-installation">Request Installation Quote</Link>
           </Button>
         </div>
 
@@ -49,13 +53,15 @@ export function SiteHeader() {
           className="xl:hidden"
           onClick={() => setOpen(!open)}
           aria-label="Toggle navigation"
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
         >
           {open ? <X className="h-6 w-6 text-[#3d2b1f]" /> : <Menu className="h-6 w-6 text-[#3d2b1f]" />}
         </button>
       </div>
 
       {open && (
-        <nav className="border-t border-[#e4d9c2] bg-[#fbf6ec] px-6 py-4 xl:hidden">
+        <nav id="mobile-navigation" className="border-t border-[#e4d9c2] bg-[#fbf6ec] px-6 py-4 xl:hidden">
           <div className="flex flex-col gap-3">
             {NAV.map((item) => (
               <Link
@@ -67,6 +73,13 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/contact?project=wallpaper-installation"
+              onClick={() => setOpen(false)}
+              className="mt-2 bg-[#8a6d1d] px-4 py-3 text-center text-sm font-semibold uppercase tracking-widest text-[#fbf6ec]"
+            >
+              Request Installation Quote
+            </Link>
           </div>
         </nav>
       )}

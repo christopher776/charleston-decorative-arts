@@ -13,7 +13,7 @@ export function SiteFooter() {
             <ul className="space-y-2 text-sm text-[#e8dcc4]">
               <li><Link href="/about">About</Link></li>
               <li><Link href="/education">Education</Link></li>
-              <li><Link href="/gallery">Gallery</Link></li>
+              <li><Link href="/gallery">Installation Portfolio</Link></li>
               <li><Link href="/journal">Journal</Link></li>
             </ul>
           </div>
@@ -22,7 +22,8 @@ export function SiteFooter() {
               Services
             </h3>
             <ul className="space-y-2 text-sm text-[#e8dcc4]">
-              <li><Link href="/luxury-wallcoverings">Luxury Wallcoverings</Link></li>
+              <li><Link href="/schumacher">Shop Schumacher</Link></li>
+              <li><Link href="/luxury-wallcoverings">Wallpaper Installation</Link></li>
               <li><Link href="/historic-restoration">Historic Restoration</Link></li>
               <li><Link href="/murals">Murals</Link></li>
               <li><Link href="/decorative-finishes">Decorative Finishes</Link></li>
@@ -56,7 +57,7 @@ export function SiteFooter() {
                   {SITE.email}
                 </a>
               </li>
-              <li><Link href="/contact">Schedule Consultation</Link></li>
+              <li><Link href="/contact?project=wallpaper-installation">Request Installation Quote</Link></li>
               <li><Link href="/designer-portal">Trade Registration</Link></li>
             </ul>
           </div>
