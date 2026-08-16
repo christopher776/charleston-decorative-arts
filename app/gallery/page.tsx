@@ -12,6 +12,12 @@ export const metadata: Metadata = {
 
 const GALLERY = [
   {
+    title: "45 Tradd Street — Three-Story Stair Hall & Bathroom",
+    image: "/images/journal/45-tradd-street/three-story-stairway-hero.webp",
+    cat: "Featured Project · South of Broad",
+    href: "/journal/45-tradd-street-historic-charleston-wallpaper-installation",
+  },
+  {
     title: "Tri Delta House — Grasscloth & Ceiling Wallpaper, Charleston",
     image: "/images/journal/tri-delta-charleston/finished-grasscloth-floral-ceiling.jpg",
     cat: "Featured Project · Historic Interiors",
