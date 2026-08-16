@@ -1,13 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IMG } from "@/lib/images";
 
 const PROJECTS = [
+  {
+    name: "45 Tradd Street — Three-Story Historic Stair Hall",
+    image: "/images/journal/45-tradd-street/three-story-stairway-hero.webp",
+    href: "/journal/45-tradd-street-historic-charleston-wallpaper-installation",
+    badge: "New Story",
+  },
   {
     name: "College of Charleston — Tri Delta House",
     image: "/images/journal/tri-delta-charleston/finished-grasscloth-floral-ceiling.jpg",
     href: "/journal/tri-delta-charleston-grasscloth-ceiling-wallpaper-installation",
-    badge: "New Story",
+    badge: "Featured Project",
   },
   {
     name: "King Street — Fine & Dandy Mural",
@@ -22,7 +27,6 @@ const PROJECTS = [
     href: "/journal/chit-chat-diner-fine-dandy-wallcovering-installation",
     badge: "Featured Project",
   },
-  { name: "South of Broad", image: IMG.southOfBroad },
 ];
 
 export function FeaturedProjects() {

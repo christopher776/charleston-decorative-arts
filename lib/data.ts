@@ -114,6 +114,121 @@ export interface Article {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "45-tradd-street-historic-charleston-wallpaper-installation",
+    title: "Three Stories of Precision: Wallpaper Installation at Historic 45 Tradd Street",
+    category: "Featured Projects",
+    dateline: "SOUTH OF BROAD · CHARLESTON, S.C.",
+    published: "2026-08-16",
+    excerpt:
+      "Inside a circa-1820 South of Broad residence, Charleston Decorative Arts installed patterned wallcovering through a three-story stair hall and a highly detailed bathroom feature wall.",
+    images: [
+      {
+        src: "/images/journal/45-tradd-street/three-story-stairway-hero.webp",
+        alt: "Three-story wallpaper installation in the historic 45 Tradd Street residence in Charleston South Carolina",
+        caption:
+          "A continuous ochre-and-white wallcovering connects three levels of the historic stair hall while allowing the original-style millwork and tall window to remain visually crisp.",
+        afterParagraph: 0,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/historic-entry-stair-detail.webp",
+        alt: "Patterned wallpaper cut around historic stairs doors and paneled wainscoting at 45 Tradd Street Charleston",
+        caption:
+          "At the lower level, the pattern meets angled stairs, door casings and paneled wainscoting—each with the subtle irregularities expected in an early-19th-century home.",
+        afterParagraph: 2,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/lower-stair-pattern-installation.webp",
+        alt: "Professional wallpaper pattern matching on a tall stairway wall in a historic Charleston residence",
+        caption:
+          "Long drops and changing sightlines make a multistory stair hall one of the most technically demanding spaces to paper.",
+        afterParagraph: 3,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/pattern-matched-switch-plates.webp",
+        alt: "Wallpaper precisely pattern matched across switch plates and an inside corner in Charleston",
+        caption:
+          "Hand-covered switch plates nearly disappear into the repeat, showing the planning required at every interruption in the wall plane.",
+        afterParagraph: 4,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/upper-landing-wallpaper.webp",
+        alt: "Luxury wallpaper professionally installed around an upper stair landing and historic white millwork",
+        caption:
+          "At the upper landing, the repeat remains balanced around doors, railings, trim and the changing height of the wainscoting.",
+        afterParagraph: 5,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/tall-stair-wall-pattern-match.webp",
+        alt: "Continuous wallpaper pattern alignment across a tall South of Broad stair hall",
+        caption:
+          "The finished field reads as one continuous composition across the open stairwell rather than a series of separately papered walls.",
+        afterParagraph: 6,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/stairwell-pattern-continuity.webp",
+        alt: "Three levels of matched wallpaper above white wainscoting in a historic Charleston home",
+        caption:
+          "Careful layout keeps the organic repeat visually level from the upper flight to the landing below.",
+        afterParagraph: 7,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/window-landing-wallpaper.webp",
+        alt: "Wallpaper installation surrounding a tall historic window on Tradd Street in Charleston",
+        caption:
+          "The paper was planned around the stair hall's tall window so narrow returns and adjacent drops remain clean and consistent.",
+        afterParagraph: 8,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/installer-three-story-stairway.webp",
+        alt: "Charleston wallpaper craftsman completing a three-story stairway installation at 45 Tradd Street",
+        caption:
+          "Professional access, surface protection and practiced control of long material drops are essential when working above an open stairwell.",
+        afterParagraph: 9,
+        aspect: 0.75,
+      },
+      {
+        src: "/images/journal/45-tradd-street/bathroom-geometric-wallpaper.webp",
+        alt: "Geometric designer wallpaper installed beside dark blue tile in a historic Charleston bathroom",
+        caption:
+          "In the bathroom, a strict grid of colorful motifs makes every line visible and requires exact layout around plumbing, electrical devices and adjoining tile.",
+        afterParagraph: 10,
+        aspect: 0.75,
+      },
+    ],
+    body: [
+      "At 45 Tradd Street, Charleston Decorative Arts transformed circulation space into a defining interior experience. A warm ochre-and-white wallcovering now rises through the home's three-story stair hall, carrying one repeating pattern past landings, windows, railings, doors and paneled wainscoting. In an adjoining bathroom, a second wallcovering—a precise grid of colorful graphic motifs—creates a tailored counterpoint to deep blue vertical tile.",
+      "The address contributes an important layer to the story. The City of Charleston's architectural inventory records 45 Tradd Street as a three-story historic structure, and available property records date the residence to circa 1820. That places the house within more than two centuries of building, repair, climate and daily use in Charleston's South of Broad neighborhood.",
+      "Tradd Street is one of the peninsula's oldest residential corridors. Laid out as part of early Charles Town and traditionally associated with settler Robert Tradd, the street contains architecture spanning Charleston's colonial, antebellum and later periods. Its narrow lots, masonry walls, timber framing, piazzas and layered interiors make it a concentrated record of how the city has grown and adapted.",
+      "Historic character, however, rarely arrives with modern geometry. Over generations, wood framing dries and shifts, masonry settles, plaster is repaired, and floors move by fractions that become meaningful across the height of a room. A ceiling can appear level while varying measurably from one side to the other. A corner may narrow from top to bottom. Chair rails, door casings and window trim often follow the house rather than a laser line.",
+      "Wallpaper magnifies those conditions. If the first drop follows an out-of-plumb corner, the error can compound as the installation moves across the room. A small deviation may become a tapered seam, a visibly drifting repeat or a forced correction in the most prominent sightline. The installer must decide which visual line governs, establish a true reference and make subtle adjustments so the finished pattern appears straight even where the building is not.",
+      "The three-story stair hall added height, restricted access and changing viewpoints to that geometry. Long drops had to remain controlled above stairs and open landings. Each section needed to connect visually to the next so the stairway would read as a single composition rather than separate walls installed floor by floor.",
+      "Pattern planning was equally important around the architecture. The repeat meets the sloping line of the stair, returns into window openings, stops precisely at painted millwork and continues around corners. Switch plates were covered and aligned to the surrounding design so functional interruptions recede into the pattern. These details look effortless only when they have been measured and sequenced in advance.",
+      "Historic-home installation also requires disciplined protection. Finished floors, stair treads, handrails and painted trim must be shielded without damaging aged surfaces. Safe access has to be established without sacrificing control of pasted material. On a multilevel stairway, setup and movement are part of the craft—not separate from it.",
+      "The bathroom presented a different test. Organic patterns can sometimes absorb a slight visual adjustment; a geometric grid cannot. Every horizontal and vertical line announces whether the layout is true. The design had to remain visually straight while being cut around supply lines, electrical devices and a corner beside the tiled shower. Exact reference lines and carefully planned cuts kept the field consistent from ceiling to floor.",
+      "This is why the lowest wallpaper-installation price can become the highest total project cost. Designer wallcoverings may represent thousands of dollars in material before labor begins, and specialty papers can involve long lead times, limited production or dye lots that cannot be matched later. One poorly planned starting point or incorrectly cut length can cost more than the difference between an experienced installer's proposal and a lower estimate.",
+      "Waste is one of the largest hidden costs. It is not calculated by square footage alone. Roll width, pattern repeat, match type, ceiling height, wall sequence, door and window placement, and the availability of usable offcuts all affect the true requirement. Accurate measuring and a deliberate cutting plan reduce unnecessary waste while reserving the right lengths for the most difficult walls. Poor planning can consume extra rolls without producing a better installation.",
+      "Quality installation therefore protects both the wallcovering and the house. It includes substrate evaluation, wall preparation, material calculation, seam placement, pattern matching, careful cutting and an understanding of how the finished room will be viewed. In a settled historic structure, the goal is not to force a 200-year-old home to behave like new construction. It is to understand its movement and create a result that looks balanced, intentional and appropriate to the architecture.",
+      "At 45 Tradd Street, that approach allowed a bold contemporary pattern to live comfortably within a historic Charleston interior. The stair hall now connects three levels with warmth and movement, while the bathroom shows the precision possible when strict geometry is entrusted to experienced hands. Together, the spaces make the case for choosing a wallpaper installer by craftsmanship, planning and accountability—not simply by the lowest price.",
+    ],
+    credits: [
+      { text: "Historical sources: " },
+      { text: "City of Charleston Architectural Inventory", href: "https://www.charleston-sc.gov/DocumentCenter/View/32806/Architectural-Inventory-Updated-2022" },
+      { text: "; " },
+      { text: "45 Tradd Street property record", href: "https://www.homes.com/property/45-tradd-st-charleston-sc/1c2rslchkthxh/" },
+      { text: "; and " },
+      { text: "Tradd Street history", href: "https://handsomeproperties.com/blog/tradd-streets-rich-history-guide" },
+      { text: ". Installation photography supplied by Charleston Decorative Arts." },
+    ],
+  },
+  {
     slug: "tri-delta-charleston-grasscloth-ceiling-wallpaper-installation",
     title: "A Historic Touch Overhead: Grasscloth and Ceiling Wallpaper Renew Charleston's Tri Delta House",
     category: "Featured Projects",
